@@ -19,4 +19,4 @@ function myLineUp(event) {
 }
 
 // Add an event listener to the submit button
-document.getElementById("submitButton").addEventListener("click", myLineUp);
+document.getElementById("submit").addEventListener("click", myLineUp);
