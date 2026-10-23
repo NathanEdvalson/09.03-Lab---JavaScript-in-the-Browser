@@ -6,7 +6,18 @@
   <title>CS208 - 09.03 Lab</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+
+  <style>
+      /* Adds space below fieldset elements. */
+      fieldset {
+        margin-bottom: 20px;
+      }
+      /* Adds space below select elements */
+      select {
+        margin-bottom: 20px;
+      }
+  </style>
 </head>
 
 <body>
@@ -16,7 +27,7 @@
   <!-- Form -->
   <form id="lineUpForm">
   <!-- Status Radio Buttons -->
-  <fieldset>
+  <fieldset >
     <legend>Status</legend>
     <label for="status-draft">
       <input type="radio" id="status-draft" name="status" value="Draft">
@@ -29,6 +40,7 @@
   </fieldset>
 
   <!-- Date Selection Drop down -->
+  <label for="gameDate">Date:</label>
   <select name="gameDate">
     <option value="March 20">March 20</option>
     <option value="March 24">March 24</option>
@@ -64,6 +76,7 @@
 
   <!-- Form Submit Button -->
   <input type="submit" value="Submit">
+
   </form>
 
   <!-- Displays Form Result -->

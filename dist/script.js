@@ -1,11 +1,12 @@
 function myLineUp(event) {
+    event.preventDefault();
     // Get the form
     const form = document.getElementById("lineUpForm");
     const formData = new FormData(form);
 
     // Print all received data to the console
     for (const [key, value] of formData.entries()) {
-        console.log(key + ": " + value);
+        console.log(key, value);
     }
 
     // Concatenate all the information into one string
